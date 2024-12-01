@@ -1,4 +1,4 @@
-```git clone https://github.com/chanrio13/openwrt-ipq -b qualcommax-6.x-nss-wifi```
+```git clone https://github.com/chanrio13/openwrt-ipq -b qualcommax-6.x-nss-wifi-6.9```
 
 ```cd openwrt-ipq```
 
