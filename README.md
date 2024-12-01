@@ -1,9 +1,9 @@
-git clone https://github.com/chanrio13/openwrt-ipq -b qualcommax-6.x-nss-wifi
+```git clone https://github.com/chanrio13/openwrt-ipq -b qualcommax-6.x-nss-wifi```
 
-cd openwrt-ipq
+```cd openwrt-ipq```
 
-nano feeds.conf.default
-
+```nano feeds.conf.default```
+```
 src-git nss_packages https://github.com/chanrio13/nss-packages.git;NSS-12.5-K6.x-wwan
 src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git
 src-git passwall https://github.com/xiaorouji/openwrt-passwall.git
@@ -16,15 +16,15 @@ src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main
 src-git 3ginfolite https://github.com/4IceG/luci-app-3ginfo-lite.git
 src-git modemband https://github.com/4IceG/luci-app-modemband.git
 src-git sms https://github.com/4IceG/luci-app-sms-tool-js.git
+```
+```chmod +x feeds.conf.default```
 
-chmod +x feeds.conf.default
+```./scripts/feeds update && ./scripts/feeds install -a```
 
-./scripts/feeds update && ./scripts/feeds install -a
+```cp nss-setup/config-nss.seed .config```
 
-cp nss-setup/config-nss.seed .config
+```make defconfig V=s```
 
-make defconfig V=s
-
-make download -j$(nproc) V=s
-make -j$(nproc) V=maks
+```make download -j$(nproc) V=s```
+```make -j$(nproc) V=maks```
 
