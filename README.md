@@ -16,6 +16,7 @@ src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main
 src-git 3ginfolite https://github.com/4IceG/luci-app-3ginfo-lite.git
 src-git modemband https://github.com/4IceG/luci-app-modemband.git
 src-git sms https://github.com/4IceG/luci-app-sms-tool-js.git
+src-git modeminfo https://github.com/solomonricky/luci-app-modeminfo.git
 ```
 ```chmod +x feeds.conf.default```
 
