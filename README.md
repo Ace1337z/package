@@ -1,4 +1,4 @@
-```git clone https://github.com/chanrio13/openwrt-ipq -b 24.10-nss```
+```git clone https://github.com/Ace1337z/openwrt-ipq -b 24.10-nss```
 
 ```cd openwrt-ipq```
 
